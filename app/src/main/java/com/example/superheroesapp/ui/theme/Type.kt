@@ -9,26 +9,33 @@ import androidx.compose.ui.unit.sp
 import com.example.superheroesapp.R
 
 // Set of Material typography styles to start with
-val CabinBold = FontFamily(
-    Font(R.font.cabin_bold)
+val Cabin = FontFamily(
+    Font(R.font.cabin_regular, FontWeight.Normal),
+    Font(R.font.cabin_bold, FontWeight.Bold)
 )
-
-val CabinRegular = FontFamily(
-    Font(R.font.cabin_regular)
-)
-
-
 val Typography = Typography(
+
     bodyLarge = TextStyle(
-        fontFamily = CabinBold,
+        fontFamily = Cabin,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
-    bodySmall = TextStyle(
-        fontFamily = CabinRegular,
+
+    displayLarge = TextStyle(
+        fontFamily = Cabin,
         fontWeight = FontWeight.Normal,
-        fontSize = 12.sp,
+        fontSize = 30.sp
+    ),
+    displayMedium = TextStyle(
+        fontFamily = Cabin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp
+    ),
+    displaySmall = TextStyle(
+        fontFamily = Cabin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp
     )
 )
