@@ -1,9 +1,10 @@
 package com.example.superheroesapp.model
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 
 data class Hero(
-    val name: String,
-    val description: String,
+    @StringRes val name: Int,
+    @StringRes val description: Int,
     @DrawableRes val profile: Int,
 )
