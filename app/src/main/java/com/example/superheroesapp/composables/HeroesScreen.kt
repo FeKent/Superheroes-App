@@ -49,7 +49,7 @@ fun SuperheroListItem(hero: Hero) {
                     painter = painterResource(hero.profile),
                     contentDescription = null,
                     alignment = Alignment.TopCenter,
-                    contentScale = ContentScale.FillWidth
+                    contentScale = ContentScale.FillBounds
                 )
             }
         }
