@@ -1,4 +1,4 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
+@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class)
 
 package com.example.superheroesapp
 
@@ -38,6 +38,7 @@ class MainActivity : ComponentActivity() {
 }
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SuperheroesApp() {
     Scaffold(
@@ -46,14 +47,14 @@ fun SuperheroesApp() {
             Column(modifier = Modifier.padding(paddingValues)) {
               HeroesScreen(heroes = heroes)  
             }
-            
+
         }
     )
 }
 
 
 
-
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SuperBar() {
     CenterAlignedTopAppBar(title = {

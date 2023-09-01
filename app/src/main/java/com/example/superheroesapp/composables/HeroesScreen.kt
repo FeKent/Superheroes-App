@@ -12,8 +12,8 @@ import com.example.superheroesapp.model.HeroesRepository.heroes
 
 
 @Composable
-fun HeroesScreen(heroes: List<Hero>, modifier: Modifier = Modifier) {
-    LazyColumn() {
+fun HeroesScreen(heroes: List<Hero>) {
+    LazyColumn {
         itemsIndexed(heroes) { _, hero ->
             HeroListItem(
                 hero = hero,
